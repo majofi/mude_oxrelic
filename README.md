@@ -21,3 +21,8 @@ Easy peasy: just copy the "musterdenker" folder into the OXID eShop "modules" di
 
 Please be aware this module is A) no official New Relic module and B) does not save you from getting a New Relic account and setting up New Relic PHP Deamon (https://docs.newrelic.com/docs/php/new-relic-for-php) in your application. Beside the PHP deamon you should also think of the great New Relic Sysdeamon (https://docs.newrelic.com/docs/server/) and other plugins like MySql, Memcache, Varnish, etc ...
 
+##Settings in OXID eShop admin
+![admin-settings](/admin-settings.jpg "admin-settings")
+
+##Transaction Overview in New Relic
+![newrelic-screenshot](/newrelic-screenshot.jpg "newrelic-screenshot")
