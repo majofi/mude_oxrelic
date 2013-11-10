@@ -1,4 +1,4 @@
-mude_newrelic
+mude_oxrelic
 =============
 
 A OXID eShop module that integrates New Relic Application Monitor.
