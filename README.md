@@ -13,6 +13,11 @@ Giving the New Relic PHP Deamon some more data makes the web transaction overvie
 
 This module makrs each transaction if it's from the shop frontend or an admin (you can also deactivate tracing of all admin actions in module settings) and seperates full page requests from it's widgets (in OXID Enterprise Edition each widget request is even listed separately as a transaction). 
 
+## Compatible with
+
+ * Community Edition & Professional Edition >= 4.8
+ * Enterprise Edition >= 5.1
+
 ## How to Install
 
 Easy peasy: just copy the "musterdenker" folder into the OXID eShop "modules" directory. Afterwards activate the module in your OXID eShop Admin. Please give your app a name and enter the New Relic licence key in the "settings" tab.
