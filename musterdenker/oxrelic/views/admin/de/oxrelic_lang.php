@@ -7,9 +7,9 @@ $sLangName  = "Deutsch";
 $aLang = array(
 
 'charset'                                       => 'UTF-8',
-'SHOP_MODULE_sMudeOxrelicAppName' => 'Gewünschter Apllikationsname',
-'SHOP_MODULE_sMudeOxrelicLicence' => 'New Relic Lizenzschlüssel',
-'SHOP_MODULE_blMudeOxrelicIgnoreAdmin' => 'Keine Metriken für den Adminbereich übermitteln'
+'SHOP_MODULE_sMudeOxrelicAppName' => 'Gew&uuml;nschter Apllikationsname',
+'SHOP_MODULE_sMudeOxrelicLicence' => 'New Relic Lizenzschl&uuml;ssel',
+'SHOP_MODULE_blMudeOxrelicIgnoreAdmin' => 'Keine Metriken für den Adminbereich &uuml;bermitteln'
 );
 
 /*
