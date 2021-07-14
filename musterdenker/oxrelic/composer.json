@@ -1,0 +1,21 @@
+{
+  "name": "musterdenker/oxrelic",
+  "description": "musterdenker - newrelic",
+  "type": "oxideshop-module",
+  "extra": {
+    "oxideshop": {
+      "blacklist-filter": [
+        "README.md"
+      ],
+      "target-directory": "musterdenker/oxrelic"
+    }
+  },
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kemweb\\Voucher\\": "../../../source/modules/musterdenker/oxrelic"
+    }
+  }
+}

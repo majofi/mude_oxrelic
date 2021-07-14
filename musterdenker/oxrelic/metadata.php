@@ -1,21 +1,28 @@
 <?php
 /**
  * Metadata version
+ *
+ * sudo -u web2 php vendor/bin/oe-console oe:module:install-configuration source/modules/musterdenker/oxrelic/
+ * => aktivieren
+ * sudo -u web2 php vendor/bin/oe-console oe:module:uninstall-configuration mude_oxrelic
  */
-$sMetadataVersion = '0.9';
+$sMetadataVersion = '1.1';
  
 /**
  * Module information
  */
 $aModule = array(
     'id'           => 'mude_oxrelic',
-    'title'        => 'New Relic for OXID',
+    'title'        => [
+        'de' => 'New Relic for OXID',
+        'en' => 'New Relic for OXID',
+    ],
     'description'  => array(
         'de' => 'Integriert den OXID eShop in New Relic.',
         'en' => 'Integrates OXID eShop into New Relic',
     ),
     'thumbnail'    => 'logo.jpg',
-    'version'      => '0.1',
+    'version'      => '0.2',
     'author'       => 'Musterdenker - Mathias Fiedler',
     'url'          => 'http://www.musterdenker.de',
     'email'        => 'mathias@musterdenker.de',
