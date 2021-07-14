@@ -1,4 +1,7 @@
 <?php
+
+use OxidEsales\EshopCommunity\Core\Registry;
+
 /**
  *    This file is part of Musterdenker oxrelic Module for OXID eShop.
  *
@@ -22,8 +25,8 @@ class mude_oxrelic extends oxSuperCfg
 {
   public static function logRequest( $sClass, $sFunction, $sType = "")
   {
-    $sAppName = oxRegistry::getConfig()->getConfigParam('sMudeOxrelicAppName') . "(" . oxRegistry::getConfig()->getShopId() . ")";
-    newrelic_set_appname($sAppName, oxRegistry::getConfig()->getConfigParam('sMudeOxrelicLicence'));
+    $sAppName = Registry::getConfig()->getConfigParam('sMudeOxrelicAppName') . "(" . Registry::getConfig()->getShopId() . ")";
+    newrelic_set_appname($sAppName, Registry::getConfig()->getConfigParam('sMudeOxrelicLicence'));
     newrelic_capture_params(true);
     $sTransactionName = "";
     if($sType){

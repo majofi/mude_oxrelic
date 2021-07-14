@@ -1,4 +1,8 @@
 <?php
+
+use OxidEsales\EshopCommunity\Core\Registry;
+use OxidEsales\Facts\Facts;
+
 /**
  *    This file is part of Musterdenker oxrelic Module for OXID eShop.
  *
@@ -22,7 +26,7 @@ class mude_oxrelic_oxwidgetcontrol extends mude_oxrelic_oxwidgetcontrol_parent
   protected function _process( $sClass, $sFunction, $aParams = null, $aViewsChain = null )
   {
     if (function_exists('newrelic_name_transaction')) { 
-      if ( oxRegistry::getConfig()->getEdition() == "EE" && oxRegistry::get( 'oxReverseProxyBackend' )->isActive() ) {
+      if ( Facts::getEdition() === "EE" && Registry::get( 'oxReverseProxyBackend' )->isActive() ) {
         mude_oxrelic::logRequest( $sClass, $sFunction, "WIDGET");
       } else {
         newrelic_add_custom_tracer("Widget::$sClass");

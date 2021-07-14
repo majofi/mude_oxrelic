@@ -1,4 +1,7 @@
 <?php
+
+use OxidEsales\EshopCommunity\Core\Registry;
+
 /**
  *    This file is part of Musterdenker oxrelic Module for OXID eShop.
  *
@@ -27,7 +30,7 @@ class mude_oxrelic_oxshopcontrol extends mude_oxrelic_oxshopcontrol_parent
       } else {
         $sType = "";
       }
-      if(!($this->isAdmin() && oxRegistry::getConfig()->getConfigParam('blMudeOxrelicIgnoreAdmin'))){
+      if(!($this->isAdmin() && Registry::getConfig()->getConfigParam('blMudeOxrelicIgnoreAdmin'))){
         mude_oxrelic::logRequest( $sClass, $sFunction, $sType);
       }
     }
